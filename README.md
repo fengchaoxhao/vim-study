@@ -153,6 +153,12 @@ Ctrl+v
 :ab [mymail] [fengchaoxhao@qq.com]
 ```
 
+### 多文件编辑
+```
+vim -o file1.txt file2.txt
+vim -O file1.txt file2.txt
+```
+
 ## 设置环境
 | 命令 | 作用 |
 | --- | --- |
