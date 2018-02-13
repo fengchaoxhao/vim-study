@@ -173,7 +173,8 @@ Ctrl+v
 ```
 ### 替换
 ```
-:ab [mymail] [fengchaoxhao@qq.com]         #输入mymail之后按回车或按空格键或按Esc，停顿1秒后mymail自动被替换为fengchaoxhao@qq.com
+:ab [mymail] [fengchaoxhao@qq.com]         #输入mymail之后按回车或按空格键或按Esc，
+                                           #停顿1秒后mymail自动被替换为fengchaoxhao@qq.com
 ```
 
 ### 多文件编辑
