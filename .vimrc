@@ -7,7 +7,7 @@ set runtimepath+=~/.vim
 set number
 
 # 取消显示行号
-#set nonumber
+set nonumber
 
 # 搜索时忽略大小写
 set ic
