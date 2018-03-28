@@ -222,6 +222,6 @@ Ctrl+ww                                     #切换窗口
 | :set ic | 搜索时忽略大小写 |
 
 ### 常用插件 ###
-[Molokai主题](https://github.com/tomasr/molokai molokai)
-[Vundle插件管理器](https://github.com/VundleVim/Vundle.vim Vundle插件管理器)
-[nerdtree插件](https://github.com/scrooloose/nerdtree nerdtree插件)
+[Molokai主题](https://github.com/tomasr/molokai "molokai")  
+[Vundle插件管理器](https://github.com/VundleVim/Vundle.vim "Vundle插件管理器")  
+[nerdtree插件](https://github.com/scrooloose/nerdtree "nerdtree插件")
