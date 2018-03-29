@@ -223,5 +223,8 @@ Ctrl+ww                                     #切换窗口
 
 ### 常用插件 ###
 [Molokai主题](https://github.com/tomasr/molokai "molokai")  
+```
+将molokai.vim配置文件放在/usr/share/vim/vim74/colors目录下
+```
 [Vundle插件管理器](https://github.com/VundleVim/Vundle.vim "Vundle插件管理器")  
 [nerdtree插件](https://github.com/scrooloose/nerdtree "nerdtree插件")
