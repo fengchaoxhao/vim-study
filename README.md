@@ -227,4 +227,8 @@ Ctrl+ww                                     #切换窗口
 将molokai.vim配置文件放在/usr/share/vim/vim74/colors目录下
 ```
 [Vundle插件管理器](https://github.com/VundleVim/Vundle.vim "Vundle插件管理器")  
+```
+先克隆Vundle仓库，然后将.vimrc文件拷贝到home目录下，然后执行:PluginInstall命令安装插件
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 [nerdtree插件](https://github.com/scrooloose/nerdtree "nerdtree插件")
