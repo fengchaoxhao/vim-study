@@ -167,6 +167,7 @@ Insert
   | ZZ | 保存退出 |
   | :r [filename] | 将filename文件的内容读入光标所在当前行的行后 |
  - 执行外部命令
+
   | 命令 | 作用 |
   | --- | --- |
   | :! [command] | 切换到terminal执行command命令，然后按enter键返回编辑器 |
