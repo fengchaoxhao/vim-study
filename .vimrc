@@ -68,6 +68,9 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 " java自动补全插件
 Plugin 'artur-shaik/vim-javacomplete2'
 
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
