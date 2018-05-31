@@ -30,6 +30,10 @@ autocmd vimenter * NERDTree
 " molokai 咖啡色背景
 let g:rehash256 = 1
 
+" 自定义快捷键
+" 在插入模式下按Ctrl+l在当前行的下面插入一个空行
+inoremap <C-l> <Esc>o
+
 " 以下是vundle配置
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -47,22 +51,23 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
+
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
+
+" 颜色主题插件
 Plugin 'tomasr/molokai'
+
+" 文件目录导航插件
 Plugin 'scrooloose/nerdtree'
+
+" git插件
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+" java自动补全插件
+Plugin 'artur-shaik/vim-javacomplete2'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -76,3 +81,26 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+
+" 将vim自动补全的功能绑定到javacomplete插件上
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+let g:SuperTabDefaultCompletionType = '<C-x><C-o>'
+
+" 配置nerdtree插件开关
+map <C-n> :NERDTreeToggle<CR>
+
+" 配置git-plugin插件图标
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+let g:NERDTreeShowIgnoredStatus = 1
