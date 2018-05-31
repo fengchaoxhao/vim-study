@@ -40,7 +40,8 @@
 | I | 在光标所在的行首前插入 |
 | o | 在光标所在的下一行插入 |
 | O | 在光标所在的上一行插入 |
-| S | 替换当前行,并进入插入模式,在当前行按下Shift+s,则当前行的内容被清空，然后开始输入新的内容。 |
+| [n]s | 删除光标所在处往后n个字符，并进入插入模式 |
+| [n]S | 删除当前行往下n行，并进入插入模式 |
 | C | 删除光标后的内容，并进入插入模式 |
 
 ### 光标定位
@@ -278,13 +279,16 @@ Ctrl+ww                                     #切换窗口
 | :set ic | 搜索时忽略大小写 |
 
 ### 常用插件 ###
-[Molokai主题](https://github.com/tomasr/molokai "molokai")  
-```
-将molokai.vim配置文件放在/usr/share/vim/vim74/colors目录下
-```
-[Vundle插件管理器](https://github.com/VundleVim/Vundle.vim "Vundle插件管理器")  
-```
-先克隆Vundle仓库，然后将.vimrc文件拷贝到home目录下，然后执行:PluginInstall命令安装插件
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
-[nerdtree插件](https://github.com/scrooloose/nerdtree "nerdtree插件")
+- [Molokai主题](https://github.com/tomasr/molokai "molokai")  
+	```
+	将molokai.vim配置文件放在/usr/share/vim/vim74/colors目录下
+	```
+- [Vundle插件管理器](https://github.com/VundleVim/Vundle.vim "Vundle插件管理器")  
+	```
+	先克隆Vundle仓库，然后将.vimrc文件拷贝到home目录下，然后执行:PluginInstall命令安装插件
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	```
+- [nerdtree插件](https://github.com/scrooloose/nerdtree "nerdtree插件")
+- [YouCompleteMe自动补全插件](https://github.com/Valloric/YouCompleteMe.git)
+- [javacomplete2自动补全插件](https://github.com/artur-shaik/vim-javacomplete2.git)
+- [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin.git)
