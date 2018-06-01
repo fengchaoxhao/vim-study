@@ -22,13 +22,14 @@ syntax enable
 " 取消显示行号
 " set nonumber
 
-autocmd vimenter * NERDTree
+" 打开文件时自动打开nerdtree
+" autocmd vimenter * NERDTree
 
 " molokai 黑色背景
-" let g:molokai_original = 1
+let g:molokai_original = 1
 
 " molokai 咖啡色背景
-let g:rehash256 = 1
+" let g:rehash256 = 1
 
 " 自定义快捷键
 " 在插入模式下按Ctrl+l在当前行的下面插入一个空行
@@ -107,3 +108,11 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 let g:NERDTreeShowIgnoredStatus = 1
+
+"  只有一个选项卡打开时自动显示所有缓冲区。
+let g:airline#extensions#tabline#enabled = 1
+
+" 可以为tabline独立配置分隔符，因此以下是您可以如何定义“直线”选项卡：
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'

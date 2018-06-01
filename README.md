@@ -308,3 +308,28 @@ Ctrl+ww                                     #切换窗口
 - [YouCompleteMe自动补全插件](https://github.com/Valloric/YouCompleteMe.git)
 - [javacomplete2自动补全插件](https://github.com/artur-shaik/vim-javacomplete2.git)
 - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin.git)
+- [airline底部状态栏插件](displays the mode + additional flags like crypt/spell/paste (INSERT))
+
+	> 以下内容翻译自插件官方文档：
+	> https://github.com/vim-airline/vim-airline.git
+
+	```
+	+-----------------------------------------------------------------------------+
+	|~                                                                            |
+	|~                                                                            |
+	|~                     VIM - Vi IMproved                                      |
+	|~                                                                            |
+	|~                       version 8.0                                          |
+	|~                    by Bram Moolenaar et al.                                |
+	|~           Vim is open source and freely distributable                      |
+	|~                                                                            |
+	|~           type :h :q<Enter>          to exit                               |
+	|~           type :help<Enter> or <F1>  for on-line help                      |
+	|~           type :help version8<Enter> for version info                      |
+	|~                                                                            |
+	|~                                                                            |
+	+-----------------------------------------------------------------------------+
+	| A | B |                     C                            X | Y | Z |  [...] |
+	+-----------------------------------------------------------------------------+
+	```
+- [taglist](https://github.com/vim-scripts/taglist.vim.git)
