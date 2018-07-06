@@ -71,6 +71,7 @@ Plugin 'artur-shaik/vim-javacomplete2'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
